@@ -168,3 +168,6 @@ cd ~/demo_ws/src
 wstool init . caltech_ee129/demo.rosinstall
 ```
 
+Now, whenever we make changes to one of the repos remotely, and we want to fetch the changes, we can use `wstool update` and all of the changes will be fetched.
+
+There are many more commands that wstool 
