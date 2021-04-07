@@ -170,4 +170,31 @@ wstool init . caltech_ee129/demo.rosinstall
 
 Now, whenever we make changes to one of the repos remotely, and we want to fetch the changes, we can use `wstool update` and all of the changes will be fetched.
 
-There are many more commands that wstool 
+There are many more commands that wstool has available as well, such as `wstool foreach`. For more, see:
+
+```
+$ wstool help
+wstool is a command to manipulate ROS workspaces. wstool replaces its predecessor rosws.
+
+Official usage:
+  wstool CMD [ARGS] [OPTIONS]
+
+wstool will try to infer install path from context
+
+Type 'wstool help' for usage.
+
+help         	provide help for commands
+init         	set up a directory as workspace
+
+set          	add or changes one entry from your workspace config
+merge        	merges your workspace with another config set
+remove (rm)   	remove an entry from your workspace config, without deleting files
+scrape       	interactively add all found unmanaged VCS subfolders to workspace
+
+update (up)   	update or check out some of your config elements
+
+info         	Overview of some entries
+status (st)   	print the change status of files in some SCM controlled entries
+diff (di)    	print a diff over some SCM controlled entries
+foreach      	run shell command in given entries
+```
