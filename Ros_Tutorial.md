@@ -138,4 +138,8 @@ sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release 
 
 See http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi#Maintaining_a_Source_Checkout
 
-This will add packages to the system install in `/opt/ros/melodic`. We will also now discuss an alternate way as well.
+This will add packages to the system install in `/opt/ros/melodic`. It also takes care of fetching the dependencies for the package
+you wish to install. It does this by creating a new rosinstall file for the package you wish to install and its dependencies, then
+merging those dependencies with the current install.
+
+
