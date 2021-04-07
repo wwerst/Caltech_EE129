@@ -1,9 +1,9 @@
 - git:
     local-name: caltech_ee129
-    uri: 'git@github.com:wwerst/caltech-ee129.git'
+    uri: 'git@github.com:wwerst/caltech_ee129.git'
     version: main
 - git:
     local-name: caltech_ee129_support
-    uri: 'git@github.com:wwerst/caltech-ee129-support.git'
+    uri: 'git@github.com:wwerst/caltech_ee129_support.git'
     version: main
 

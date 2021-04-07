@@ -144,6 +144,8 @@ merging those dependencies with the current install.
 
 ### Simple demo of Rosinstall with wstool
 
+Wstool documentation can be found here: http://wiki.ros.org/wstool
+
 In order to avoid repeatedly typing ssh password, you may want to start an ssh-agent:
 
 ```
@@ -163,7 +165,6 @@ Now, we use `wstool init` to initialize our project with all of the relevant rep
 
 ```
 cd ~/demo_ws/src
-wstool init . Caltech_EE129/demo.rosinstall
+wstool init . caltech_ee129/demo.rosinstall
 ```
-
 
