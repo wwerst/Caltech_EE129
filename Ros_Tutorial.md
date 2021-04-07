@@ -142,4 +142,28 @@ This will add packages to the system install in `/opt/ros/melodic`. It also take
 you wish to install. It does this by creating a new rosinstall file for the package you wish to install and its dependencies, then
 merging those dependencies with the current install.
 
+### Simple demo of Rosinstall with wstool
+
+In order to avoid repeatedly typing ssh password, you may want to start an ssh-agent:
+
+```
+eval $(ssh-agent -s)
+ssh-add
+```
+
+Clone main repo that contains the rosinstall file:
+
+```
+cd ~
+mkdir -pv ~/demo_ws/src && cd demo_ws/src
+git clone git@github.com:wwerst/caltech_ee129.git
+```
+
+Now, we use `wstool init` to initialize our project with all of the relevant repos. This command will clone our support repo:
+
+```
+cd ~/demo_ws/src
+wstool init . Caltech_EE129/demo.rosinstall
+```
+
 
